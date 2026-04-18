@@ -12,6 +12,8 @@ The pipeline models telemetry for five bridges and processes three sensor stream
 
 The project follows the medallion architecture:
 
+![Pipeline Architecture](pipeline.png)
+
 1. `00_data_generator.py`
    Continuously generates synthetic bridge telemetry and appends it to Delta paths in a Unity Catalog volume.
 2. `01_bronze_processing.py`
